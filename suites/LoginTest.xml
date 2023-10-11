@@ -8,6 +8,7 @@
     <test name="LoginTest" thread-count="4" parallel="methods">
         <classes>
             <class name="tests.LoginTest"/>
+            <class name="tests.OfferUploadTest"/>
         </classes>
     </test>
 </suite>

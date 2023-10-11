@@ -13,10 +13,9 @@ public class LoginTest extends BaseTest {
     @Test
     public void loginOnStaging() {
         loginPage = new LoginPage(PageManager.getPage());
-        loginPage.navigateToStagURL();
-        String url = loginPage.getPageURL();
-        Assert.assertEquals(url, AppConstants.STAG_URL);
         loginPage.login(properties.getProperty("username"), properties.getProperty("password"));
+        String url = loginPage.getPageURL();
+        Assert.assertEquals(url, AppConstants.DEV_URL, "URL is not correct");
     }
 }
 

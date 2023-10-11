@@ -29,11 +29,15 @@ public class LoginPage {
         page.waitForLoadState();
     }
 
+
+
     public String getPageURL(){
         return page.url();
     }
 
     public void login(String email, String password){
+        page.navigate(browserFactory.init_prop().getProperty("devURL"));
+        page.waitForLoadState();
         page.fill(inputEmail, email);
         page.click(continueButton);
         page.fill(inputPassword, password);

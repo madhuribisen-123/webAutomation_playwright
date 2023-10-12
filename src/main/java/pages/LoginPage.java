@@ -43,4 +43,5 @@ public class LoginPage {
         page.fill(inputPassword, password);
         page.click(logIn);
     }
+
 }

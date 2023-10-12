@@ -47,12 +47,14 @@ public class OfferPage {
     public void verifyAndClickOnRewardsPay() {
         page.isVisible(rewardsPay);
         page.click(rewardsPay);
+        page.waitForLoadState();
     }
 
     //verify and click on offers
     public void verifyAndClickOnOffers() {
         page.isVisible(offers);
         page.click(offers);
+        page.waitForLoadState();
     }
 
     //verify manage offer

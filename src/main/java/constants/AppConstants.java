@@ -8,4 +8,6 @@ public class AppConstants {
     public static final String UPLOAD_OFFER = "Upload Offers";
     public static final String DOWNLOAD_OFFER = "Download Offers";
     public static final String DOWNLOAD_BLACKOUT_DATES = "Download Blackout Dates";
+    public static final String BANK_OFFERS = "Bank Offers";
+    public static final String DELETE_MESSAGE = "Are you sure you want to delete?";
 }
